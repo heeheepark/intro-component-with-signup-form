@@ -70,30 +70,56 @@ main {
   padding: 30px;
 }
 
-.userInfo .input-area label {
-  height: 320px;
+.userInfo .input-area ul  {
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   margin: 10px;
 }
 
-label input {
+ul li {
+  list-style: none;
+  position: relative;
+}
+
+ul input {
+  width: 100%;
   height: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding-left: 30px;
+  margin-bottom: 18px;
 }
 
-label input:focus {
+ul input:focus {
   outline: 1px solid hsl(248, 32%, 49%);
 }
 
-label input:hover {
+ul input:hover {
   border: 1px solid hsl(248, 32%, 49%);
 }
 
-label button {
+ul .errorMsg {
+  color:hsl(0, 100%, 74%);
+  text-align: right;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 500;
+  padding: 5px 5px 18px 0;
+  display: none;
+}
+
+ul li img {
+  width: 21px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  display: none;
+}
+
+ul button {
+  width: 100%;
   height: 50px;
   border: none;
   background-color: hsl(154, 59%, 51%);
@@ -103,13 +129,14 @@ label button {
   letter-spacing: 2px;
 }
 
-label button:hover {
+ul button:hover {
   cursor: pointer;
+  background-color: hsl(154, 85%, 60%);
 }
 
 .input-area .termsText {
   display: block;
-  color: #ccc;
+  color: #aaa;
   font-size: 10px;
   font-weight: 400;
   text-align: center;
@@ -183,30 +210,34 @@ label button:hover {
     padding: 30px;
   }
   
-  .userInfo .input-area label {
-    height: 320px;
+  .userInfo .input-area ul  {
+    height: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     margin: 10px;
   }
   
-  label input {
+
+  ul input {
     height: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding-left: 30px;
   }
   
-  label input:focus {
+
+  ul input:focus {
     outline: 1px solid hsl(248, 32%, 49%);
   }
   
-  label input:hover {
+
+  ul input:hover {
     border: 1px solid hsl(248, 32%, 49%);
   }
   
-  label button {
+
+  ul button {
     height: 50px;
     border: none;
     background-color: hsl(154, 59%, 51%);
@@ -216,8 +247,10 @@ label button:hover {
     letter-spacing: 2px;
   }
   
-  label button:hover {
+
+  ul button:hover {
     cursor: pointer;
+    background-color: hsl(154, 85%, 60%);
   }
   
   .input-area .termsText {
@@ -298,30 +331,34 @@ label button:hover {
     padding: 15px;
   }
   
-  .userInfo .input-area label {
-    height: 320px;
+  .userInfo .input-area ul  {
+    height: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     margin: 10px;
   }
   
-  label input {
+
+  ul input {
     height: 50px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding-left: 30px;
   }
   
-  label input:focus {
+
+  ul input:focus {
     outline: 1px solid hsl(248, 32%, 49%);
   }
   
-  label input:hover {
+
+  ul input:hover {
     border: 1px solid hsl(248, 32%, 49%);
   }
   
-  label button {
+
+  ul button {
     height: 50px;
     border: none;
     background-color: hsl(154, 59%, 51%);
@@ -331,8 +368,10 @@ label button:hover {
     letter-spacing: 2px;
   }
   
-  label button:hover {
+
+  ul button:hover {
     cursor: pointer;
+    background-color: hsl(154, 85%, 60%);
   }
   
   .input-area .termsText {
