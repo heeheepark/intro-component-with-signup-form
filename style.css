@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 100%, 74%) ;
+  background-image: url(images/bg-intro-desktop.png);
+  color: #fff;
+}
+
+main {
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+}
+
+.text-area {
+  width: 50%;
+  margin-right: 75px;
+}
+
+.text-area h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-area p {
+  font-size: 15px;
+}
+
+.userInfo {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.userInfo .alert-area {
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  height: 50px;
+  text-align: center;
+  line-height: 3.0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 5px rgba(34, 34, 34, 0.2)
+}
+
+.alert-area span:first-child {
+  font-weight: 600;
+}
+
+.alert-area span:last-child {
+  font-weight: 200;
+}
+
+.userInfo .input-area {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 5px rgba(34, 34, 34, 0.2);
+  padding: 30px;
+}
+
+.userInfo .input-area label {
+  height: 320px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+label input {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 30px;
+}
+
+label input:focus {
+  outline: 1px solid hsl(248, 32%, 49%);
+}
+
+label input:hover {
+  border: 1px solid hsl(248, 32%, 49%);
+}
+
+label button {
+  height: 50px;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  border-radius: 5px;
+  border-bottom: 3px solid hsl(154, 54%, 37%);
+  letter-spacing: 2px;
+}
+
+label button:hover {
+  cursor: pointer;
+}
+
+.input-area .termsText {
+  display: block;
+  color: #ccc;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.input-area .termsText span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+.input-area .termsText span:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
+  .text-area {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  
+  .text-area h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .text-area p {
+    font-size: 15px;
+  }
+  
+  .userInfo {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .userInfo .alert-area {
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    height: 80px;
+    text-align: center;
+    line-height: 5.0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 5px rgba(34, 34, 34, 0.2)
+  }
+  
+  .alert-area span:first-child {
+    font-weight: 600;
+  }
+  
+  .alert-area span:last-child {
+    font-weight: 200;
+  }
+  
+  .userInfo .input-area {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 5px rgba(34, 34, 34, 0.2);
+    padding: 30px;
+  }
+  
+  .userInfo .input-area label {
+    height: 320px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  label input {
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 30px;
+  }
+  
+  label input:focus {
+    outline: 1px solid hsl(248, 32%, 49%);
+  }
+  
+  label input:hover {
+    border: 1px solid hsl(248, 32%, 49%);
+  }
+  
+  label button {
+    height: 50px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    border-radius: 5px;
+    border-bottom: 3px solid hsl(154, 54%, 37%);
+    letter-spacing: 2px;
+  }
+  
+  label button:hover {
+    cursor: pointer;
+  }
+  
+  .input-area .termsText {
+    display: block;
+    color: #ccc;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .input-area .termsText span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+  }
+  
+  .input-area .termsText span:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
+  .text-area {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  
+  .text-area h1 {
+    font-size: 27px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .text-area p {
+    font-size: 15px;
+  }
+  
+  .userInfo {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  
+  .userInfo .alert-area {
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    height: 80px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 5px rgba(34, 34, 34, 0.2);
+    padding: 15px 50px 0;
+  }
+  
+  .alert-area span:first-child {
+    font-weight: 600;
+  }
+  
+  .alert-area span:last-child {
+    font-weight: 200;
+  }
+  
+  .userInfo .input-area {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 5px rgba(34, 34, 34, 0.2);
+    padding: 15px;
+  }
+  
+  .userInfo .input-area label {
+    height: 320px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  label input {
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 30px;
+  }
+  
+  label input:focus {
+    outline: 1px solid hsl(248, 32%, 49%);
+  }
+  
+  label input:hover {
+    border: 1px solid hsl(248, 32%, 49%);
+  }
+  
+  label button {
+    height: 50px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    border-radius: 5px;
+    border-bottom: 3px solid hsl(154, 54%, 37%);
+    letter-spacing: 2px;
+  }
+  
+  label button:hover {
+    cursor: pointer;
+  }
+  
+  .input-area .termsText {
+    display: block;
+    color: #ccc;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 27px;
+  }
+  
+  .input-area .termsText span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+  }
+  
+  .input-area .termsText span:hover {
+    cursor: pointer;
+  }
+}
